@@ -149,7 +149,7 @@ main .option i {
   margin-right: 3px;
 }
 
-/* COLONNE CENTRALI */
+/* COLONNE MIDDLE */
 
 main .container {
   justify-content: space-between;
