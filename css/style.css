@@ -11,7 +11,7 @@ body {
 .blue-button {
   background-color: #0061FF;
   color: white;
-  padding: 5px 15px;
+  padding: 7px 15px;
   font-size: 1rem;
   border-color: none;
   width: fit-content;
@@ -154,6 +154,7 @@ main .option i {
 main .container {
   justify-content: space-between;
   margin-top: 50px;
+  flex-wrap: wrap;
 }
 
 main .titolo-col {
@@ -167,12 +168,89 @@ main .titolo-col i {
   font-size: .8rem;
 }
 
+main .titolo-col span {
+  font-size: .9rem;
+}
+
 main .col {
-  height: 700px;
   width: 300px;
   border: 0.6px solid lightgrey;
 }
 
 main .info-col {
   border-top: 0.6px solid lightgrey;
+  padding: 30px;
+}
+
+main .info-col h3 {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+main .info-col p {
+  font-size: .9rem;
+  margin-bottom: 10px;
+}
+
+main .info-col ul {
+  margin: 40px 0px;
+}
+
+main .info-col li {
+  list-style: none;
+  font-size: .9rem;
+  margin: 20px 0;
+}
+
+main .info-col i {
+  margin-right: 5px;
+}
+
+main .col .info-col .blue-button {
+  font-size: .9rem;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+main .col .info-col:last-child p{
+  margin-top: 30px;
+  font-size: .9rem;
+}
+
+main hr {
+  margin: 35px 0
+}
+
+main h4 {
+  font-size: .9rem;
+}
+
+main .col .info-col .last-list span{
+  color: #0061FF;
+}
+
+/* COLONNA IN BASSO LARGA */
+
+main .col-bottom {
+  margin-top: 30px;
+  width: 100%;
+  border: 0.6px solid lightgrey;
+}
+
+main .col-bottom .info-col {
+  position: relative;
+}
+
+main .col-bottom .info-col .blue-button {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: .9rem;
+  text-align: center;
+  padding: 10px 30px;
+}
+
+main .col-bottom .info-col p:last-of-type {
+  margin-top: 40px;
 }
