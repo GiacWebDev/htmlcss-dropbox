@@ -17,6 +17,13 @@ body {
   width: fit-content;
 }
 
+.trasp-button {
+  color: black;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid black;
+  width: fit-content;
+}
 .debug {
   background-color: bisque;
 }
@@ -84,7 +91,7 @@ header img {
 
 .large-container {
   margin: auto;
-  width: 65%;
+  width: 70%;
   max-width: 1400px;
 }
 
@@ -129,10 +136,10 @@ header img {
 main {
   padding-top: 170px;
   margin: auto;
-  width: 50%;
 }
 
 main h2 {
+  margin-top: 40px;
   font-size: 2.5rem;
 }
 
@@ -155,6 +162,8 @@ main .container {
   justify-content: space-between;
   margin-top: 50px;
   flex-wrap: wrap;
+  width: 50%;
+  margin: auto;
 }
 
 main .titolo-col {
@@ -233,7 +242,7 @@ main .col .info-col .last-list span{
 /* COLONNA IN BASSO LARGA */
 
 main .col-bottom {
-  margin-top: 30px;
+  margin: 30px 0px;
   width: 100%;
   border: 0.6px solid lightgrey;
 }
@@ -253,4 +262,33 @@ main .col-bottom .info-col .blue-button {
 
 main .col-bottom .info-col p:last-of-type {
   margin-top: 40px;
+}
+
+main .col-bottom .info-col .left {
+  width: 70%;
+}
+
+/* /CONTAINER COLONNE */
+
+
+main .simple-sec{
+  margin-top: 120px;
+}
+
+main .simple-sec .left {
+  width: 55%;
+}
+
+main .simple-sec .left img {
+  width: 100%;
+}
+
+main .simple-sec .right {
+  display: block;
+  width: 45%;
+  padding: 70px 50px 0px 50px;
+}
+
+main .simple-sec .right p {
+  margin: 25px 0;
 }
