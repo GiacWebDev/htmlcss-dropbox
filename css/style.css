@@ -122,3 +122,58 @@ header img {
 .hero .hero-col .right img {
   width: 100%;
 }
+
+
+/* MAIN */
+
+main {
+  padding-top: 170px;
+  margin: auto;
+  width: 50%;
+}
+
+main h2 {
+  font-size: 2.5rem;
+}
+
+main .option {
+  display: flex;
+  margin: 50px 0PX;
+}
+
+main .option-left {
+  margin-right: 50px;
+}
+
+main .option i {
+  margin-right: 3px;
+}
+
+/* COLONNE CENTRALI */
+
+main .container {
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+main .titolo-col {
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0px;
+}
+
+main .titolo-col i {
+  margin-right: 5px;
+  font-size: .8rem;
+}
+
+main .col {
+  height: 700px;
+  width: 300px;
+  border: 0.6px solid lightgrey;
+}
+
+main .info-col {
+  border-top: 0.6px solid lightgrey;
+  
+}
