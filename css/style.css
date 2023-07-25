@@ -59,6 +59,7 @@ header {
   width: 100%;
   height: 50px;
   top: 0;
+  z-index: 2;
 }
 
 header .top-row {
@@ -72,11 +73,9 @@ header .top-row {
 header .left,.right {
   display: flex;
   width: 50%;
-}
-
-header .right {
- justify-content: end;
- align-items: center;
+  height: 100%;
+  justify-content: end;
+  align-items: center;
 }
 
 header .right .blue-button {
@@ -90,6 +89,10 @@ header ul {
 
 header ul li{
   margin-right: 40px;
+}
+
+header ul li:hover{
+  border-bottom: 1px solid black;
 }
 
 header ul a {
@@ -360,6 +363,7 @@ main .sq-column {
   display: flex;
   margin-top: 150px;
   width: 100%;
+  aspect-ratio: 3/1;
 }
 
 main .sq-column .square-left,
@@ -371,15 +375,40 @@ main .sq-column .square-right {
 }
 
 main .sq-column .square-left .sq {
+  display: flex;
   width: 50%;
-  aspect-ratio: 1/1;
-  border: 1px solid black;
+  justify-content: center;
 }
 
+main .sq-column .square-left .sq,
 main .sq-column .square-right .sq {
-  width: 50%;
   aspect-ratio: 1/1;
-  border: 1px solid black;
+}
+
+main .sq-column .square-left .sq img {
+  width: 40%;
+  filter: invert(1);
+}
+
+main .sq-column .square-left .sq.lightgreen {
+  background-color: #A2D39B;
+}
+
+main .sq-column .square-left .sq.darkred {
+  background-color: #61082B;
+}
+
+main .sq-column .square-left .sq.lightblue {
+  background-color: #0093CE;
+  align-items: center;
+}
+
+main .sq-column .square-left .sq.red {
+  background-color: #FF1B1B;
+}
+
+main .sq-column .square-left .sq.lightblue img {
+  height: 10%;
 }
 
 main .sq-column .square-mid {
@@ -399,6 +428,37 @@ main .sq-column .square-mid hr {
 
 main .sq-column .square-mid p:last-child {
   margin-top: 50px;
+}
+
+main .sq-column .square-right .sq {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+main .sq-column .square-right .sq img {
+  width: 40%;
+  filter: invert(1);
+}
+
+main .sq-column .square-right .sq.midred {
+  background-color: #D5001F;
+}
+
+main .sq-column .square-right .sq.lilla {
+  background-color: #B4D0E7;
+}
+
+main .sq-column .square-right .sq.blue {
+  background-color: #0D2481;
+}
+
+main .sq-column .square-right .sq.yellow {
+  background-color: #FFD831;
+}
+
+main .sq-column .sq:hover {
+  border: 15px solid rgba(255, 255, 255, 0.4);
 }
 
 main .light-blue {
