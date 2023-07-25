@@ -19,10 +19,11 @@ h3 {
 .blue-button {
   background-color: #0061FF;
   color: white;
-  padding: 7px 15px;
+  padding: 10px 15px;
   font-size: 1rem;
   border-color: none;
   width: fit-content;
+  cursor: pointer;
 }
 
 .trasp-button {
@@ -31,6 +32,7 @@ h3 {
   font-size: 1rem;
   border: 1px solid black;
   width: fit-content;
+  cursor: pointer;
 }
 
 .white-button {
@@ -40,6 +42,7 @@ h3 {
   font-size: 1rem;
   width: fit-content;
   height: fit-content;
+  cursor: pointer;
 }
 
 .debug {
@@ -74,6 +77,10 @@ header .left,.right {
 header .right {
  justify-content: end;
  align-items: center;
+}
+
+header .right .blue-button {
+  padding: 7px 15px;
 }
 
 header ul {
@@ -423,6 +430,10 @@ main .light-blue .box .right {
 
 /* DOMANDE FREQUENTI */
 
+main .qna {
+  margin-bottom: 150px;
+}
+
 main .qna .question {
   justify-content: space-between;
 }
@@ -447,6 +458,53 @@ main .qna .question .right i {
 
 main .question {
   align-items: center;
-  border-bottom: 0.5px solid black;
+  border-bottom: 0.5px solid gray;
   height: 100px;
+}
+
+
+/* FOOTER */
+
+footer {
+  background-color: black;
+  padding-top: 110px;
+  padding-bottom: 60px;
+}
+
+/* footer .column-footer {
+  height: 600px;
+} */
+
+footer .column-footer .row {
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+footer .column-footer .row ul {
+  width: 180px;
+}
+
+footer .column-footer .row li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+footer .column-footer .row li:first-child {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+footer .column-footer .row a {
+  text-decoration: none;
+  color: white;
+}
+
+footer hr {
+  margin-bottom: 50px;
+}
+
+footer span {
+  color: #999999;
+  margin: 0px 5px;
 }
