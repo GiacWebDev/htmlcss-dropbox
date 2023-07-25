@@ -428,7 +428,7 @@ main .qna .question {
 }
 
 main .qna h2 {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 main .qna .question .left h4 {
@@ -445,6 +445,8 @@ main .qna .question .right i {
   font-size: 15px;
 }
 
-main .qna hr {
-  margin: 40px 0px;
+main .question {
+  align-items: center;
+  border-bottom: 0.5px solid black;
+  height: 100px;
 }
