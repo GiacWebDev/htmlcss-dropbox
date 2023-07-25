@@ -32,6 +32,16 @@ h3 {
   border: 1px solid black;
   width: fit-content;
 }
+
+.white-button {
+  color: black;
+  background-color: white;
+  padding: 10px 40px;
+  font-size: 1rem;
+  width: fit-content;
+  height: fit-content;
+}
+
 .debug {
   background-color: bisque;
 }
@@ -147,7 +157,6 @@ main {
 }
 
 main h2 {
-  margin-top: 40px;
   font-size: 2.5rem;
 }
 
@@ -235,7 +244,7 @@ main .col .info-col:last-child p{
   font-size: .9rem;
 }
 
-main hr {
+main .col hr {
   margin: 35px 0
 }
 
@@ -384,4 +393,58 @@ main .sq-column .square-mid hr {
 
 main .sq-column .square-mid p:last-child {
   margin-top: 50px;
+}
+
+main .light-blue {
+  display: flex;
+  height: 350px;
+  background-color: #B4D0E7;
+  margin-bottom: 150px;
+}
+
+main .light-blue .box {
+  display: flex;
+}
+
+main .light-blue .box .left,
+main .light-blue .box .right {
+  width: 50%;
+}
+
+main .light-blue .box .left h2 {
+  color: #61082B
+}
+
+main .light-blue .box .right {
+  padding-top: 5px;
+  justify-content: flex-end;
+}
+
+
+/* DOMANDE FREQUENTI */
+
+main .qna .question {
+  justify-content: space-between;
+}
+
+main .qna h2 {
+  margin-bottom: 50px;
+}
+
+main .qna .question .left h4 {
+  font-size: 1rem;
+}
+
+main .qna .question .right{
+  justify-content: flex-end;
+  width: 20%;
+}
+
+main .qna .question .right i {
+  margin-right: 40px;
+  font-size: 15px;
+}
+
+main .qna hr {
+  margin: 40px 0px;
 }
