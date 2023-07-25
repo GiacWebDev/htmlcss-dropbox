@@ -341,7 +341,47 @@ main .operation .column-bottom h2 {
 /* SEZIONE QUADRATI */
 
 main .sq-column {
+  display: flex;
   margin-top: 150px;
   width: 100%;
-  height: 500px;
+  height: 500px
+}
+
+main .sq-column .square-left,
+main .sq-column .square-mid,
+main .sq-column .square-right {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% / 3);
+}
+
+main .sq-column .square-left .sq {
+  width: 50%;
+  height: 50%;
+  border: 1px solid black;
+}
+
+main .sq-column .square-right .sq {
+  width: 50%;
+  height: 50%;
+  border: 1px solid black;
+}
+
+main .sq-column .square-mid {
+  display: block;
+  overflow: auto;
+  padding: 60px 50px 50px 50px;
+  background-color: #F5F5F5;
+}
+
+main .sq-column .square-mid img {
+  width: 50%;
+}
+
+main .sq-column .square-mid hr {
+  margin: 40px 0px;
+}
+
+main .sq-column .square-mid p:last-child {
+  margin-top: 50px;
 }
