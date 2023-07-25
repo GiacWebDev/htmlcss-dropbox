@@ -8,6 +8,14 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+li {
+  display: flex;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
 .blue-button {
   background-color: #0061FF;
   color: white;
@@ -91,8 +99,8 @@ header img {
 
 .large-container {
   margin: auto;
-  width: 70%;
-  max-width: 1400px;
+  width: 90%;
+  max-width: 1200px;
 }
 
 .hero .large-container h1 {
@@ -162,7 +170,8 @@ main .container {
   justify-content: space-between;
   margin-top: 50px;
   flex-wrap: wrap;
-  width: 50%;
+  width: 90%;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -193,7 +202,6 @@ main .info-col {
 
 main .info-col h3 {
   margin-bottom: 20px;
-  font-size: 1.4rem;
 }
 
 main .info-col p {
@@ -212,7 +220,7 @@ main .info-col li {
 }
 
 main .info-col i {
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 main .col .info-col .blue-button {
@@ -268,15 +276,20 @@ main .col-bottom .info-col .left {
   width: 70%;
 }
 
+main .last-list span {
+  margin-right: 10px;
+}
+
 /* /CONTAINER COLONNE */
 
 
 main .simple-sec{
   margin-top: 120px;
+  margin-bottom: 120px;
 }
 
 main .simple-sec .left {
-  width: 55%;
+  width: 60%;
 }
 
 main .simple-sec .left img {
@@ -285,10 +298,50 @@ main .simple-sec .left img {
 
 main .simple-sec .right {
   display: block;
-  width: 45%;
+  width: 40%;
   padding: 70px 50px 0px 50px;
 }
 
 main .simple-sec .right p {
   margin: 25px 0;
+}
+
+/* SEZIONE OPERAZIONI */
+
+main .operation .column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+main .operation .column .card {
+  width: 300px;
+  height: 500px;
+  margin-bottom: 50px;
+}
+
+main .operation .column .card img {
+  width: 100%;
+}
+
+main .operation .column .card h3 {
+  margin: 10px 0px 20px 0px;
+}
+
+main .operation .column-bottom {
+  margin-top: 80px;
+}
+
+main .operation .column-bottom h2 {
+  max-width: 70%;
+  margin-bottom: 60px;
+}
+
+/* SEZIONE QUADRATI */
+
+main .sq-column {
+  margin-top: 150px;
+  width: 100%;
+  height: 500px;
 }
