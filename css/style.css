@@ -16,7 +16,11 @@ h3 {
   font-size: 1.4rem;
 }
 
-.blue-button {
+a {
+  text-decoration: none;
+}
+
+.blue-button{
   background-color: #0061FF;
   color: white;
   padding: 10px 15px;
@@ -24,6 +28,14 @@ h3 {
   border-color: none;
   width: fit-content;
   cursor: pointer;
+}
+
+.blue-button:hover {
+  box-shadow: 0px 3px 5px 0px rgb(50, 50, 50);
+  background-color: #3985ff;
+  color: white;
+  transform: scale(1.05);
+  transition: 0.2s;
 }
 
 .trasp-button {
@@ -35,6 +47,11 @@ h3 {
   cursor: pointer;
 }
 
+.trasp-button:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
 .white-button {
   color: black;
   background-color: white;
@@ -43,6 +60,14 @@ h3 {
   width: fit-content;
   height: fit-content;
   cursor: pointer;
+}
+
+.white-button:hover {
+  box-shadow: 0px 3px 5px 0px rgba(36, 36, 36, 0.861);
+  border: 0.5px solid gray;
+  color: rgb(31, 31, 31);
+  transform: scale(1.05);
+  transition: 0.2s;
 }
 
 .debug {
@@ -74,8 +99,11 @@ header .left,.right {
   display: flex;
   width: 50%;
   height: 100%;
-  justify-content: end;
   align-items: center;
+}
+
+header .top-row .right {
+  justify-content: end;
 }
 
 header .right .blue-button {
@@ -85,10 +113,12 @@ header .right .blue-button {
 header ul {
   display: flex;
   list-style: none;
+  height: 90px;
 }
 
 header ul li{
   margin-right: 40px;
+  align-items: center;
 }
 
 header ul li:hover{
@@ -340,9 +370,16 @@ main .operation .column .card {
   margin-bottom: 50px;
 }
 
+main .operation .column .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 30px 20px -25px #c9c7c7;
+  transition: 0.2s;
+}
+
 main .operation .column .card img {
   width: 100%;
 }
+
 
 main .operation .column .card h3 {
   margin: 10px 0px 20px 0px;
@@ -385,8 +422,9 @@ main .sq-column .square-right .sq {
   aspect-ratio: 1/1;
 }
 
-main .sq-column .square-left .sq img {
-  width: 40%;
+main .sq-column .square-left .sq img,
+main .sq-column .square-right .sq img {
+  width: 50%;
   filter: invert(1);
 }
 
@@ -409,6 +447,7 @@ main .sq-column .square-left .sq.red {
 
 main .sq-column .square-left .sq.lightblue img {
   height: 10%;
+  width: 55%;
 }
 
 main .sq-column .square-mid {
@@ -436,11 +475,6 @@ main .sq-column .square-right .sq {
   justify-content: center;
 }
 
-main .sq-column .square-right .sq img {
-  width: 40%;
-  filter: invert(1);
-}
-
 main .sq-column .square-right .sq.midred {
   background-color: #D5001F;
 }
@@ -457,9 +491,11 @@ main .sq-column .square-right .sq.yellow {
   background-color: #FFD831;
 }
 
-main .sq-column .sq:hover {
-  border: 15px solid rgba(255, 255, 255, 0.4);
+/* main .sq-column .sq:hover, */
+main .sq-column .sq:active {
+  box-shadow: inset 0px 0px 0px 20px #ffffff42;
 }
+
 
 main .light-blue {
   display: flex;
